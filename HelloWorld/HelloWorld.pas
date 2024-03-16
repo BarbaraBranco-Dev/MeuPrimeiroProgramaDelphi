@@ -25,8 +25,22 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.Button1Click(Sender: TObject);
+var
+  I: integer;
+  lTeste: string;
 begin
   ShowMessage('Hello World!');
+  for I := 0 to 5 do
+  begin
+    if I<3 then
+    begin
+      ShowMessage('Laço: ' + I.ToString + slineBreak + 'Aprendizado do For');
+    end;
+  end;
+
+  ShowMessage('Que venham novos aprendizados!');
+
+
 end;
 
 end.
